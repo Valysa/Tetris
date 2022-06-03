@@ -8,6 +8,8 @@ int main(){
     noecho();
     do {
         game = menu(game);
-    }while (game.choix !=4);
+    }while (game.choix !=3);
+    echo();
+    endwin();
     return (0);
 }

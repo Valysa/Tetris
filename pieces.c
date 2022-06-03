@@ -159,19 +159,19 @@ Piece placement(Piece piece){ //On attribue l'abscisse et l'ordonnée de chacune
 
 int testColision(Piece piece, int tableau[LONGUEUR][LARGEUR]){ //On vérifie que les pièces n'entrent pas en colision entre elles ou bien sortent du plateau
     if(tableau[piece.tuile1.ord+1][piece.tuile1.abs] != 0 || piece.tuile1.ord+1 == LONGUEUR){
-        puts("ça pete1");
+        //puts("ça pete1");
         return(1) ;
     }
     if(tableau[piece.tuile2.ord+1][piece.tuile2.abs] != 0 || piece.tuile2.ord+1 == LONGUEUR){
-        puts("ça pete2");
+        //puts("ça pete2");
         return(1) ;
     }
     if(tableau[piece.tuile3.ord+1][piece.tuile3.abs] != 0 || piece.tuile3.ord+1 == LONGUEUR){
-        puts("ça pete3");
+        //puts("ça pete3");
         return(1) ;
     }
     if(tableau[piece.tuile4.ord+1][piece.tuile4.abs] != 0 || piece.tuile4.ord+1 == LONGUEUR){
-        puts("ça pete4");
+        //puts("ça pete4");
         return(1) ;
     }
     return 0;
@@ -198,48 +198,48 @@ int testColonne(Piece piece, int tableau[LONGUEUR][LARGEUR]) {
 }
 
 int ColonneDroite(Piece piece, int tableau[LONGUEUR][LARGEUR]) { //On vérifie que la pièce ne peut pas dépasser le côté droit du plateau
-    printf("1 %d / %d\n",piece.tuile1.abs, piece.tuile1.ord);
-    printf("2 %d / %d\n",piece.tuile2.abs, piece.tuile2.ord);
-    printf("3 %d / %d\n",piece.tuile3.abs, piece.tuile3.ord);
-    printf("4 %d / %d\n",piece.tuile4.abs, piece.tuile4.ord);
+    //printf("1 %d / %d\n",piece.tuile1.abs, piece.tuile1.ord);
+    //printf("2 %d / %d\n",piece.tuile2.abs, piece.tuile2.ord);
+    //printf("3 %d / %d\n",piece.tuile3.abs, piece.tuile3.ord);
+    //printf("4 %d / %d\n",piece.tuile4.abs, piece.tuile4.ord);
     if(piece.tuile1.abs+1 >= LARGEUR) {
-        puts("On sort du tableau");
+        //puts("On sort du tableau");
         return 1;
     }
     if(piece.tuile2.abs+1 >= LARGEUR) {
-        puts("On sort du tableau");
+        //puts("On sort du tableau");
         return 1;
     }
     if(piece.tuile3.abs+1 >= LARGEUR) {
-        puts("On sort du tableau");
+        //puts("On sort du tableau");
         return 1;
     }
     if(piece.tuile4.abs+1 >= LARGEUR) {
-        puts("On sort du tableau");
+        //puts("On sort du tableau");
         return 1;
     }
     return 0;
 }
 
 int ColonneGauche(Piece piece, int tableau[LONGUEUR][LARGEUR]) { //On vérifie que la pièce ne peut pas dépasser le coté gauche du plateau
-    printf("1 %d / %d\n",piece.tuile1.abs, piece.tuile1.ord);
-    printf("2 %d / %d\n",piece.tuile2.abs, piece.tuile2.ord);
-    printf("3 %d / %d\n",piece.tuile3.abs, piece.tuile3.ord);
-    printf("4 %d / %d\n",piece.tuile4.abs, piece.tuile4.ord);
+    //printf("1 %d / %d\n",piece.tuile1.abs, piece.tuile1.ord);
+    //printf("2 %d / %d\n",piece.tuile2.abs, piece.tuile2.ord);
+    //printf("3 %d / %d\n",piece.tuile3.abs, piece.tuile3.ord);
+    //printf("4 %d / %d\n",piece.tuile4.abs, piece.tuile4.ord);
     if(piece.tuile1.abs-1 == -1) {
-        puts("On sort du tableau");
+        //puts("On sort du tableau");
         return 1;
     }
     if(piece.tuile2.abs-1 == -1) {
-        puts("On sort du tableau");
+        //puts("On sort du tableau");
         return 1;
     }
     if(piece.tuile3.abs-1 == -1) {
-        puts("On sort du tableau");
+        //puts("On sort du tableau");
         return 1;
     }
     if(piece.tuile4.abs-1 == -1) {
-        puts("On sort du tableau");
+        //puts("On sort du tableau");
         return 1;
     }
     return 0;
