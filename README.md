@@ -22,7 +22,8 @@ Tetris by Jules and Julien
   Time :
   
     Be carefull, you only have 18 seconds to press 'v'
-    If you go over this time limit the first moove you will not be played and the piece will fall instantly
+    The time limit can't go below 4 seconds though
+    If you go over this time limit the first moove you do will not be played and the piece will fall instantly
     Each 10 turns the time you got to press 'v' drops by one second
   Scores :
   
@@ -32,5 +33,6 @@ Tetris by Jules and Julien
       100 for two lines
       250 for three lines
       500 for four lines
+    So the games rewards you if you finish multiple lines at once
     At the end of the game, if your score is at least above the 10th of the Hall of fame, the game will ask you a pseudo
     (Note that pseudo can't countain spaces so they are automatically replaces by '_')
